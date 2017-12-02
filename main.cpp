@@ -33,8 +33,8 @@ void tabulation(double start, double finish, double h) {
     int n = (int)round((finish-start)/h+1);
     double X[n], Y[n];
     for (int i = 0; i < n; i++) {
-        float x = start + i * h;
-        float y = f(x);
+        double x = start + i * h;
+        double y = f(x);
         printf("%5.16lf %8.16lf\n", x, y);
         X[i] = x;
         Y[i] = y;
